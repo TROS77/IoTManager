@@ -3,18 +3,18 @@
         "name": "IoTmanagerVer4",
         "apssid": "IoTmanager",
         "appass": "",
-        "routerssid": "iot",
-        "routerpass": "hostel3333",
-        "timezone": 2,
+        "routerssid": "perenio",
+        "routerpass": "4455667788",
+        "timezone": 3,
         "ntp": "pool.ntp.org",
         "weblogin": "admin",
         "webpass": "admin",
-        "mqttServer": "",
-        "mqttPort": 8021,
-        "mqttPrefix": "/risenew",
-        "mqttUser": "rise",
-        "mqttPass": "3hostel3",
-        "serverip": "http://iotmanager.org",
+        "mqttServer": "live-control.com",
+        "mqttPort": 1883,
+        "mqttPrefix": "/demo",
+        "mqttUser": "",
+        "mqttPass": "",
+        "serverip": "",
         "log": 0,
         "mqttin": 0,
         "pinSCL": 0,
@@ -166,7 +166,7 @@
             },
             {
                 "path": "src/modules/virtual/Weather",
-                "active": false
+                "active": true
             }
         ],
         "sensors": [
@@ -304,7 +304,7 @@
             },
             {
                 "path": "src/modules/sensors/Pzem004t_v2",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/RCswitch",
