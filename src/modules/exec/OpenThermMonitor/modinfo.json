@@ -1,0 +1,68 @@
+{
+  "menuSection": "executive_devices",
+  "configItem": [
+    {
+      "global": 0,
+      "name": "OpenThermMonitor",
+      "type": "Reading",
+      "subtype": "OpenThermMonitor",
+      "id": "boiler",
+      "widget": "anydataDef",
+      "page": "OpenTherm",
+      "descr": "Котел",
+      "speed": 115200,
+      "value": "...",
+      "LogLevel": 0,
+      "RX_pin": 13,
+      "TX_pin": 15,
+      "centralHeating": 1,
+      "hotWater": 1,
+      "tempDHWmin": 35,
+      "tempDHWmax": 60,
+      "tempCHmin": 30,
+      "tempCHmax": 85,
+      "useOfflineMode": 1,
+      "offlineCHTemp": 40,
+      "telegram": 1,
+      "int": 60,
+      "license": ""
+    }
+  ],
+  "about": {
+    "authorName": "AVAKS",
+    "authorContact": "https://t.me/@avaks",
+    "authorGit": "https://github.com/avaksru",
+    "specialThanks": "",
+    "moduleName": "OpenThermMonitor",
+    "moduleVersion": "2",
+    "usedRam": {
+      "esp32_4mb": 15,
+      "esp8266_4mb": 15
+    },
+    "title": "OpenThermMonitor",
+    "moduleDesc": "Управление газовым отопительным котлом .",
+    "propInfo": {
+      "int": "Интервал отправки данных в MQTT и web интерфейс",
+      "centralHeating": "1-Отопление включено, используется только при сохранении/изменении конфигурации, при перезагрузках состояние сохраняется ранее установленное",
+      "hotWater": "1-ГВС включено, используется только при сохранении/изменении конфигурации, при перезагрузках состояние сохраняется ранее установленное",
+      "tempDHWmin": "Минимальная темперагура ГВС. Осторожно! при command(ID,temp) из сценария не проверяется, используйте set....()",
+      "tempDHWmax": "Максимальная температура ГВС. Осторожно! при command(ID,temp) из сценария не проверяется, используйте set....()",
+      "tempCHmin": "Минимальная темперагура СО. Осторожно! при command(ID,temp) из сценария не проверяется, используйте set....()",
+      "tempCHmax": "Максимальная температура СО. Осторожно! при command(ID,temp) из сценария не проверяется, используйте set....()",
+      "useOfflineMode": "1-использовать режим offline при отключении от wifi или mqtt, если термостат и opentherm на одной плате, то 0, данные должен давать термостат",
+      "offlineCHTemp": "Температура Отопления в режиме offline, работает при useOfflineMode = 1",
+      "telegram": "1- Будет отправлять в телеграмм оповещения при ошибках котла и пропаже сигнала от котла, остальные необходимо реализовывать через сценарий"
+    }
+  },
+  "defActive": true,
+  "usedLibs": {
+    "esp32_4mb": [],
+    "esp32s2_4mb": [],
+    "esp32_4mb3f": [],
+    "esp8266_4mb": [],
+    "esp8266_1mb": [],
+    "esp8266_1mb_ota": [],
+    "esp8285_1mb": [],
+    "esp8285_1mb_ota": []
+  }
+}
