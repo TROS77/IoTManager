@@ -74,4 +74,4 @@ jobs:
 ```
 
 
-:ballot_box_with_check: Онлайн флешер  `https://espressif.github.io/esptool-js/)https://espressif.github.io/esptool-js/`    
+:ballot_box_with_check: Онлайн флешер  `https://espressif.github.io/esptool-js/`    
