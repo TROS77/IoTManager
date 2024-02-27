@@ -1,7 +1,8 @@
 # IoTManager
+:white_check_mark: [Видеоинструкция](https://youtu.be/feauIN7FCbY)    
+
 
 #### Команды:  
-
 
 :ballot_box_with_check: IoTManagerProject/IoTManager/ `Main.cpp`    
 ```yaml
