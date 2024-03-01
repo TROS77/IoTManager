@@ -130,16 +130,6 @@
         }
     },
     "modules": {
-        "Виртуальные элементы": [
-            {
-                "path": "src/modules/virtual/SaveConfig",
-                "active": false
-            },
-            {
-                "path": "src/modules/virtual/VariableColor",
-                "active": true
-            }
-        ],
         "virtual_elments": [
             {
                 "path": "src/modules/virtual/Cron",
@@ -170,11 +160,19 @@
                 "active": true
             },
             {
+                "path": "src/modules/virtual/SaveConfig",
+                "active": false
+            },
+            {
                 "path": "src/modules/virtual/Timer",
                 "active": true
             },
             {
                 "path": "src/modules/virtual/Variable",
+                "active": true
+            },
+            {
+                "path": "src/modules/virtual/VariableColor",
                 "active": true
             },
             {
@@ -466,15 +464,13 @@
                 "active": false
             }
         ],
-        "Экраны": [
-            {
-                "path": "src/modules/display/GyverLAMP",
-                "active": true
-            }
-        ],
         "screens": [
             {
                 "path": "src/modules/display/DwinI",
+                "active": true
+            },
+            {
+                "path": "src/modules/display/GyverLAMP",
                 "active": true
             },
             {

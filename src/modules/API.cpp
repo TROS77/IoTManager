@@ -38,7 +38,6 @@ void* getAPI_OpenThermMonitor(String subtype, String params);
 void* getAPI_Pcf8574(String subtype, String params);
 void* getAPI_Pwm32(String subtype, String params);
 void* getAPI_TelegramLT(String subtype, String params);
-void* getAPI_Thermostat(String subtype, String params);
 void* getAPI_DwinI(String subtype, String params);
 void* getAPI_Lcd2004(String subtype, String params);
 void* getAPI_Oled64(String subtype, String params);
@@ -84,7 +83,6 @@ if ((tmpAPI = getAPI_OpenThermMonitor(subtype, params)) != nullptr) return tmpAP
 if ((tmpAPI = getAPI_Pcf8574(subtype, params)) != nullptr) return tmpAPI;
 if ((tmpAPI = getAPI_Pwm32(subtype, params)) != nullptr) return tmpAPI;
 if ((tmpAPI = getAPI_TelegramLT(subtype, params)) != nullptr) return tmpAPI;
-if ((tmpAPI = getAPI_Thermostat(subtype, params)) != nullptr) return tmpAPI;
 if ((tmpAPI = getAPI_DwinI(subtype, params)) != nullptr) return tmpAPI;
 if ((tmpAPI = getAPI_Lcd2004(subtype, params)) != nullptr) return tmpAPI;
 if ((tmpAPI = getAPI_Oled64(subtype, params)) != nullptr) return tmpAPI;

@@ -4,9 +4,6 @@
         "num": 0
     },
     {
-        "header": "Виртуальные элементы"
-    },
-    {
         "header": "virtual_elments"
     },
     {
@@ -938,88 +935,10 @@
         "num": 58
     },
     {
-        "global": 0,
-        "needSave": 0,
-        "name": "59. Термостат Гистере́зис ",
-        "type": "Writing",
-        "subtype": "ThermostatGIST",
-        "id": "Thermo",
-        "widget": "anydataDef",
-        "page": "Климат",
-        "descr": "термостат",
-        "int": 60,
-        "round": 1,
-        "set_id": "",
-        "term_id": "",
-        "term_rezerv_id": "",
-        "gist": 0.3,
-        "rele": "",
-        "num": 59
-    },
-    {
-        "global": 0,
-        "needSave": 0,
-        "name": "60. Термостат PID",
-        "type": "Writing",
-        "subtype": "ThermostatPID",
-        "id": "Thermo",
-        "widget": "anydataHum",
-        "page": "Климат",
-        "descr": "термостат",
-        "int": 60,
-        "round": 1,
-        "map": "1,100,1,100",
-        "set_id": "",
-        "term_id": "",
-        "term_rezerv_id": "",
-        "rele": "",
-        "KP": 5.0,
-        "KI": 50,
-        "KD": 1.0,
-        "num": 60
-    },
-    {
-        "global": 0,
-        "needSave": 0,
-        "name": "61. Термостат ЭТК",
-        "type": "Writing",
-        "subtype": "ThermostatETK",
-        "id": "Thermo",
-        "widget": "anydataTmp",
-        "page": "Климат",
-        "descr": "термостат",
-        "int": 60,
-        "round": 1,
-        "iv_k": 1,
-        "outside_id": "",
-        "num": 61
-    },
-    {
-        "global": 0,
-        "needSave": 0,
-        "name": "62. Термостат ЭТК2 ",
-        "type": "Writing",
-        "subtype": "ThermostatETK2",
-        "id": "Thermo",
-        "widget": "anydataTmp",
-        "page": "Климат",
-        "descr": "термостат",
-        "int": 60,
-        "round": 1,
-        "set_id": "",
-        "term_id": "",
-        "iv_k": 1,
-        "outside_id": "",
-        "num": 62
-    },
-    {
-        "header": "Экраны"
-    },
-    {
         "header": "screens"
     },
     {
-        "name": "63. LCD Dwin экран",
+        "name": "59. LCD Dwin экран",
         "type": "Reading",
         "subtype": "DwinI",
         "id": "dwin",
@@ -1031,11 +950,11 @@
         "line": 2,
         "speed": 9600,
         "btn-uploadUI": "",
-        "num": 63
+        "num": 59
     },
     {
         "global": 0,
-        "name": "64. LCD экран 2004",
+        "name": "60. LCD экран 2004",
         "type": "Reading",
         "subtype": "Lcd2004",
         "id": "Lcd",
@@ -1048,10 +967,10 @@
         "id2show": "",
         "prefix": "",
         "postfix": "",
-        "num": 64
+        "num": 60
     },
     {
-        "name": "65. LCD экран 1602",
+        "name": "61. LCD экран 1602",
         "type": "Reading",
         "subtype": "Lcd2004",
         "id": "Lcd",
@@ -1064,11 +983,11 @@
         "id2show": "",
         "prefix": "",
         "postfix": "",
-        "num": 65
+        "num": 61
     },
     {
         "global": 0,
-        "name": "66. OLED экран 64 8266",
+        "name": "62. OLED экран 64 8266",
         "type": "Reading",
         "subtype": "Oled64",
         "id": "Oled",
@@ -1081,11 +1000,11 @@
         "id2show": "",
         "prefix": "",
         "postfix": "",
-        "num": 66
+        "num": 62
     },
     {
         "global": 0,
-        "name": "67. Smi2_m",
+        "name": "63. Smi2_m",
         "type": "Writing",
         "subtype": "Smi2_m",
         "id": "Smi",
@@ -1098,6 +1017,6 @@
         "baud": "9600",
         "rx": "16",
         "tx": "17",
-        "num": 67
+        "num": 63
     }
 ]
