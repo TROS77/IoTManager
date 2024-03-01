@@ -28,7 +28,7 @@
             },
             {
                 "path": "src/modules/virtual/Math",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/virtual/owmWeather",
@@ -56,7 +56,7 @@
             },
             {
                 "path": "src/modules/virtual/Weather",
-                "active": false
+                "active": true
             }
         ],
         "sensors": [

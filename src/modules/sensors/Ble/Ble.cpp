@@ -2,8 +2,6 @@
 #include "classes/IoTItem.h"
 #include <Arduino.h>
 #include <NimBLEDevice.h>
-#define BLE_PART1
-#define BLE_PART2
 #include <decoder.h>
 #include <vector>
 
@@ -236,25 +234,23 @@ public:
 
     if (decoder.decodeBLEJson(BLEdata))
     {
-      String mac_address = BLEdata["mac"].as<const char *>();
+      String mac_address = BLEdata["MAC"].as<const char *>();
       if (mac_address == "")
       {
-        BLEdata["mac"] = BLEdata["id"];
+        BLEdata["MAC"] = BLEdata["id"];
         mac_address = BLEdata["id"].as<const char *>();
       }
       mac_address.replace(":", "");
 
-      if (_debug < 2)
-      {
-        BLEdata.remove("manufacturerdata");
-        BLEdata.remove("servicedata");
-        BLEdata.remove("type");
-        BLEdata.remove("cidc");
-        BLEdata.remove("acts");
-        BLEdata.remove("cont");
-        BLEdata.remove("track");
-        BLEdata.remove("id");
-      }
+      BLEdata.remove("manufacturerdata");
+      BLEdata.remove("servicedata");
+      BLEdata.remove("type");
+      BLEdata.remove("cidc");
+      BLEdata.remove("acts");
+      BLEdata.remove("cont");
+      BLEdata.remove("track");
+      BLEdata.remove("id");
+
       // дописываем время прихода пакета данных
       BLEdata["last"] = millis();
       if (_debug)
@@ -265,16 +261,13 @@ public:
           // {
           // String val = BLEdata.as<String>();
           String output;
-          if (_debug < 2)
-          {
-            BLEdata.remove("servicedatauuid");
-          }
+          BLEdata.remove("servicedatauuid");
           serializeJson(BLEdata, output);
           SerialPrint("i", F("BLE"), mac_address + " " + output);
           //}
         }
 
-        SerialPrint("i", F("BLE"), "found: " + String(BLEdata["mac"].as<const char *>()));
+        SerialPrint("i", F("BLE"), "found: " + String(BLEdata["MAC"].as<const char *>()));
       }
 
       // Перебираем все зарегистрированные сенсоры BleSens

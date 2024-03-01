@@ -68,18 +68,7 @@
     },
     {
         "global": 0,
-        "name": "5. Math library",
-        "type": "Reading",
-        "subtype": "IoTMath",
-        "id": "math",
-        "widget": "anydataValue",
-        "page": "Математика",
-        "descr": "",
-        "num": 5
-    },
-    {
-        "global": 0,
-        "name": "6. Погода OWM",
+        "name": "5. Погода OWM",
         "type": "Reading",
         "subtype": "owmWeather",
         "id": "owm",
@@ -97,11 +86,11 @@
         "round": 1,
         "val": "...",
         "debug": 0,
-        "num": 6
+        "num": 5
     },
     {
         "global": 0,
-        "name": "7. Таймер",
+        "name": "6. Таймер",
         "type": "Writing",
         "subtype": "Timer",
         "id": "timer",
@@ -113,11 +102,11 @@
         "ticker": 1,
         "repeat": 1,
         "needSave": 0,
-        "num": 7
+        "num": 6
     },
     {
         "global": 0,
-        "name": "8. Окно ввода числа (переменная)",
+        "name": "7. Окно ввода числа (переменная)",
         "type": "Reading",
         "subtype": "Variable",
         "id": "value",
@@ -131,11 +120,11 @@
         "plus": 0,
         "multiply": 1,
         "round": 0,
-        "num": 8
+        "num": 7
     },
     {
         "global": 0,
-        "name": "9. Окно ввода времени",
+        "name": "8. Окно ввода времени",
         "type": "Reading",
         "subtype": "Variable",
         "id": "time",
@@ -145,11 +134,11 @@
         "descr": "Введите время",
         "int": "0",
         "val": "02:00",
-        "num": 9
+        "num": 8
     },
     {
         "global": 0,
-        "name": "10. Окно ввода даты",
+        "name": "9. Окно ввода даты",
         "type": "Reading",
         "subtype": "Variable",
         "id": "time",
@@ -159,11 +148,11 @@
         "descr": "Введите дату",
         "int": "0",
         "val": "24.05.2022",
-        "num": 10
+        "num": 9
     },
     {
         "global": 0,
-        "name": "11. Окно ввода текста",
+        "name": "10. Окно ввода текста",
         "type": "Reading",
         "subtype": "Variable",
         "id": "txt",
@@ -173,11 +162,11 @@
         "descr": "Введите текст",
         "int": "0",
         "val": "текст",
-        "num": 11
+        "num": 10
     },
     {
         "global": 0,
-        "name": "12. Вывод значения",
+        "name": "11. Вывод значения",
         "type": "Reading",
         "subtype": "Variable",
         "id": "vout",
@@ -191,11 +180,11 @@
         "plus": 0,
         "multiply": 1,
         "round": 0,
-        "num": 12
+        "num": 11
     },
     {
         "global": 0,
-        "name": "13. Виртуальная кнопка",
+        "name": "12. Виртуальная кнопка",
         "type": "Reading",
         "subtype": "VButton",
         "id": "vbtn",
@@ -205,6 +194,23 @@
         "descr": "Кнопка",
         "int": "0",
         "val": "0",
+        "num": 12
+    },
+    {
+        "global": 0,
+        "name": "13. Погода",
+        "type": "Reading",
+        "subtype": "Weather",
+        "id": "Weather",
+        "needSave": 0,
+        "widget": "anydataDef",
+        "page": "Погода",
+        "descr": "",
+        "int": 3,
+        "location": "Moscow",
+        "param": "temp_C",
+        "round": 0,
+        "val": "...",
         "num": 13
     },
     {
