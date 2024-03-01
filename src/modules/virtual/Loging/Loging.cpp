@@ -15,8 +15,6 @@ private:
 
     int _publishType = -2;
     int _wsNum = -1;
-    int days = 1;
-    int daysShow = 1;
 
     int points;
     // int keepdays;
@@ -26,7 +24,7 @@ private:
     String prevDate = "";
     bool firstTimeInit = true;
 
-    long interval;
+    // long interval;
 
 public:
     Loging(String parameters) : IoTItem(parameters)
@@ -39,14 +37,10 @@ public:
             points = 300;
             SerialPrint("E", F("Loging"), "'" + id + "' user set more points than allowed, value reset to 300");
         }
-        jsonRead(parameters, F("int"), interval);
-        interval = interval * 1000 * 60; // приводим к милисекундам
+        long interval;
+        jsonRead(parameters, F("int"), interval); // в минутах
+        setInterval(interval * 60);
         // jsonRead(parameters, F("keepdays"), keepdays, false);
-
-        jsonRead(parameters, F("daysSave"), days);
-        days = days * 86400;
-        jsonRead(parameters, F("daysShow"), daysShow);
-        daysShow = daysShow * 86400;
 
         // создадим экземпляр класса даты
         dateIoTItem = (IoTItem *)getAPI_Date("{\"id\": \"" + id + "-date\",\"int\":\"20\",\"subtype\":\"date\"}");
@@ -56,13 +50,6 @@ public:
 
     void doByInterval()
     {
-        // если время не было получено из интернета
-        if (!isTimeSynch)
-        {
-            SerialPrint("E", F("Loging"), "'" + id + "' Сant loging - time not synchronized, return");
-            return;
-        }
-        deleteOldFile();
         // если объект логгирования не был создан
         if (!isItemExist(logid))
         {
@@ -75,6 +62,13 @@ public:
         if (value == "")
         {
             SerialPrint("E", F("Loging"), "'" + id + "' loging value is empty, return");
+            return;
+        }
+
+        // если время не было получено из интернета
+        if (!isTimeSynch)
+        {
+            SerialPrint("E", F("Loging"), "'" + id + "' Сant loging - time not synchronized, return");
             return;
         }
 
@@ -267,7 +261,7 @@ public:
             unsigned long fileUnixTimeLocal = getFileUnixLocalTime(path);
 
             unsigned long reqUnixTime = strDateToUnix(getItemValue(id + "-date"));
-            if (fileUnixTimeLocal > reqUnixTime - daysShow && fileUnixTimeLocal < reqUnixTime + 86400)
+            if (fileUnixTimeLocal > reqUnixTime && fileUnixTimeLocal < reqUnixTime + 86400)
             {
                 noData = false;
                 String json = getAdditionalJson();
@@ -331,7 +325,7 @@ public:
     {
         IoTFSInfo tmp = getFSInfo();
         SerialPrint("i", "Loging", String(tmp.freePer) + " % free flash remaining");
-        if (tmp.freePer <= 20.00)
+        if (tmp.freePer <= 50.00)
         {
             String dir = "/lg/" + id;
             filesList = getFilesList(dir);
@@ -352,28 +346,6 @@ public:
             }
         }
     }
-    void deleteOldFile()
-    {
-        String dir = "/lg/" + id;
-        filesList = getFilesList(dir);
-        int i = 0;
-        while (filesList.length())
-        {
-            String path = selectToMarker(filesList, ";");
-            String pathTodel = path;
-            pathTodel.replace("/", "");
-            pathTodel.replace(".txt", "");
-            int pathTodel_ = pathTodel.toInt();
-            path = dir + path;
-            i++;
-            if (pathTodel_ < unixTimeShort - days)
-            {
-                removeFile(path);
-                SerialPrint("i", "Loging!!!!!!", String(i) + ") " + path + " => old files been deleted");
-            }
-            filesList = deleteBeforeDelimiter(filesList, ";");
-        }
-    }
 
     void setPublishDestination(int publishType, int wsNum)
     {
@@ -381,28 +353,21 @@ public:
         _wsNum = wsNum;
     }
 
-    String getValue()
-    {
-        return "";
-    }
-    /*
-        void loop()
-        {
-            if (enableDoByInt)
-            {
-                currentMillis = millis();
-                difference = currentMillis - prevMillis;
-                if (difference >= interval)
-                {
-                    prevMillis = millis();
-                    if (interval != 0)
-                    {
-                        this->doByInterval();
-                    }
-                }
-            }
-        }
-    */
+    String getValue() { return ""; }
+
+    // void loop() {
+    //     if (enableDoByInt) {
+    //         currentMillis = millis();
+    //         difference = currentMillis - prevMillis;
+    //         if (difference >= interval) {
+    //             prevMillis = millis();
+    //             if (interval != 0) {
+    //                 this->doByInterval();
+    //             }
+    //         }
+    //     }
+    // }
+
     void regEvent(const String &value, const String &consoleInfo, bool error = false, bool genEvent = true)
     {
         String userDate = getItemValue(id + "-date");
@@ -419,16 +384,10 @@ public:
     }
 
     // просто максимальное количество точек
-    int calculateMaxCount()
-    {
-        return 86400;
-    }
+    int calculateMaxCount() { return 86400; }
 
     // путь вида: /lg/log/1231231.txt
-    unsigned long getFileUnixLocalTime(String path)
-    {
-        return gmtTimeToLocal(selectToMarkerLast(deleteToMarkerLast(path, "."), "/").toInt() + START_DATETIME);
-    }
+    unsigned long getFileUnixLocalTime(String path) { return gmtTimeToLocal(selectToMarkerLast(deleteToMarkerLast(path, "."), "/").toInt() + START_DATETIME); }
     void setValue(const IoTValue &Value, bool genEvent = true)
     {
         value = Value;
@@ -490,7 +449,7 @@ public:
     void setTodayDate()
     {
         setValue(getTodayDateDotFormated());
-        SerialPrint("i", F("Loging"), "today date set " + getTodayDateDotFormated());
+        SerialPrint("E", F("Loging"), "today date set " + getTodayDateDotFormated());
     }
 
     void doByInterval()
@@ -506,7 +465,4 @@ public:
     }
 };
 
-void *getAPI_Date(String param)
-{
-    return new Date(param);
-}
+void *getAPI_Date(String param) { return new Date(param); }
