@@ -184,7 +184,21 @@
     },
     {
         "global": 0,
-        "name": "12. Виртуальная кнопка",
+        "name": "12. Цветной текст",
+        "type": "Reading",
+        "subtype": "VariableColor",
+        "id": "color",
+        "needSave": 0,
+        "widget": "anydataDef",
+        "page": "Вывод",
+        "descr": "Цветной текст",
+        "val": "...",
+        "round": 0,
+        "num": 12
+    },
+    {
+        "global": 0,
+        "name": "13. Виртуальная кнопка",
         "type": "Reading",
         "subtype": "VButton",
         "id": "vbtn",
@@ -194,11 +208,11 @@
         "descr": "Кнопка",
         "int": "0",
         "val": "0",
-        "num": 12
+        "num": 13
     },
     {
         "global": 0,
-        "name": "13. Погода",
+        "name": "14. Погода",
         "type": "Reading",
         "subtype": "Weather",
         "id": "Weather",
@@ -211,14 +225,14 @@
         "param": "temp_C",
         "round": 0,
         "val": "...",
-        "num": 13
+        "num": 14
     },
     {
         "header": "sensors"
     },
     {
         "global": 0,
-        "name": "14. AHTXX Температура",
+        "name": "15. AHTXX Температура",
         "type": "Reading",
         "subtype": "AhtXXt",
         "id": "Temp20",
@@ -229,11 +243,11 @@
         "addr": "0x38",
         "shtType": 1,
         "round": 1,
-        "num": 14
+        "num": 15
     },
     {
         "global": 0,
-        "name": "15. AHTXX Влажность",
+        "name": "16. AHTXX Влажность",
         "type": "Reading",
         "subtype": "AhtXXh",
         "id": "Hum20",
@@ -244,10 +258,10 @@
         "addr": "0x38",
         "shtType": 1,
         "round": 1,
-        "num": 15
+        "num": 16
     },
     {
-        "name": "16. bluetooth сканер",
+        "name": "17. bluetooth сканер",
         "type": "Reading",
         "subtype": "BleScan_p1",
         "id": "BleScan",
@@ -258,10 +272,10 @@
         "scanDuration": 10,
         "filter": "servicedatauuid",
         "debug": 1,
-        "num": 16
+        "num": 17
     },
     {
-        "name": "17. bluetooth датчик",
+        "name": "18. bluetooth датчик",
         "type": "Reading",
         "subtype": "BleSens_p1",
         "id": "BleSens",
@@ -277,11 +291,11 @@
         "offline": 180,
         "MAC": "",
         "sensor": "",
-        "num": 17
+        "num": 18
     },
     {
         "global": 0,
-        "name": "18. BME280 Температура",
+        "name": "19. BME280 Температура",
         "type": "Reading",
         "subtype": "Bme280t",
         "id": "Tmp3",
@@ -291,11 +305,11 @@
         "int": 15,
         "addr": "0x77",
         "round": 1,
-        "num": 18
+        "num": 19
     },
     {
         "global": 0,
-        "name": "19. BME280 Давление",
+        "name": "20. BME280 Давление",
         "type": "Reading",
         "subtype": "Bme280p",
         "id": "Press3",
@@ -305,11 +319,11 @@
         "int": 15,
         "addr": "0x77",
         "round": 1,
-        "num": 19
+        "num": 20
     },
     {
         "global": 0,
-        "name": "20. BME280 Влажность",
+        "name": "21. BME280 Влажность",
         "type": "Reading",
         "subtype": "Bme280h",
         "id": "Hum3",
@@ -319,11 +333,11 @@
         "int": 15,
         "addr": "0x77",
         "round": 1,
-        "num": 20
+        "num": 21
     },
     {
         "global": 0,
-        "name": "21. BME280 Tочка росы",
+        "name": "22. BME280 Tочка росы",
         "type": "Reading",
         "subtype": "Bme280dp",
         "id": "Dew3",
@@ -333,11 +347,11 @@
         "int": 15,
         "addr": "0x77",
         "round": 1,
-        "num": 21
+        "num": 22
     },
     {
         "global": 0,
-        "name": "22. BMP280 Температура",
+        "name": "23. BMP280 Температура",
         "type": "Reading",
         "subtype": "Bmp280t",
         "id": "tmp3",
@@ -347,11 +361,11 @@
         "int": 15,
         "addr": "0x77",
         "round": 1,
-        "num": 22
+        "num": 23
     },
     {
         "global": 0,
-        "name": "23. BMP280 Давление",
+        "name": "24. BMP280 Давление",
         "type": "Reading",
         "subtype": "Bmp280p",
         "id": "Press3",
@@ -361,11 +375,11 @@
         "int": 15,
         "addr": "0x77",
         "round": 1,
-        "num": 23
+        "num": 24
     },
     {
         "global": 0,
-        "name": "24. DHT11 Температура",
+        "name": "25. DHT11 Температура",
         "type": "Reading",
         "subtype": "Dht1122t",
         "id": "tmp3",
@@ -375,11 +389,11 @@
         "int": 15,
         "pin": 0,
         "senstype": "dht11",
-        "num": 24
+        "num": 25
     },
     {
         "global": 0,
-        "name": "25. DHT11 Влажность",
+        "name": "26. DHT11 Влажность",
         "type": "Reading",
         "subtype": "Dht1122h",
         "id": "Hum3",
@@ -389,11 +403,11 @@
         "int": 15,
         "pin": 0,
         "senstype": "dht11",
-        "num": 25
+        "num": 26
     },
     {
         "global": 0,
-        "name": "26. DS18B20 Температура",
+        "name": "27. DS18B20 Температура",
         "type": "Reading",
         "subtype": "Ds18b20",
         "id": "dstmp",
@@ -405,11 +419,11 @@
         "index": 0,
         "addr": "",
         "round": 1,
-        "num": 26
+        "num": 27
     },
     {
         "global": 0,
-        "name": "27. MQTT парсер",
+        "name": "28. MQTT парсер",
         "type": "Reading",
         "subtype": "ExternalMQTT",
         "id": "MQTTin",
@@ -425,11 +439,11 @@
         "offline": 180,
         "int": 60,
         "debug": 0,
-        "num": 27
+        "num": 28
     },
     {
         "global": 0,
-        "name": "28. Cенсор температуры NTC",
+        "name": "29. Cенсор температуры NTC",
         "type": "Reading",
         "subtype": "Ntc",
         "id": "Ntctmp",
@@ -446,14 +460,14 @@
         "T0": "25",
         "Vs": "3.3",
         "round": 1,
-        "num": 28
+        "num": 29
     },
     {
         "header": "executive_devices"
     },
     {
         "global": 0,
-        "name": "29. Аналоговая кнопка",
+        "name": "30. Аналоговая кнопка",
         "type": "Reading",
         "subtype": "AnalogBtn",
         "id": "abtn",
@@ -463,11 +477,11 @@
         "pin": 34,
         "aValue": -1,
         "delta": 50,
-        "num": 29
+        "num": 30
     },
     {
         "global": 0,
-        "name": "30. Кнопка подключенная к пину",
+        "name": "31. Кнопка подключенная к пину",
         "type": "Writing",
         "subtype": "ButtonIn",
         "id": "btn",
@@ -482,11 +496,11 @@
         "debounceDelay": 50,
         "fixState": 0,
         "inv": 0,
-        "num": 30
+        "num": 31
     },
     {
         "global": 0,
-        "name": "31. Управление пином",
+        "name": "32. Управление пином",
         "type": "Writing",
         "subtype": "ButtonOut",
         "needSave": 0,
@@ -497,11 +511,11 @@
         "int": 0,
         "inv": 0,
         "pin": 2,
-        "num": 31
+        "num": 32
     },
     {
         "global": 0,
-        "name": "32. OpenThermMonitor",
+        "name": "33. OpenThermMonitor",
         "type": "Reading",
         "subtype": "OpenThermMonitor",
         "id": "boiler",
@@ -524,11 +538,11 @@
         "telegram": 1,
         "int": 60,
         "license": "",
-        "num": 32
+        "num": 33
     },
     {
         "global": 0,
-        "name": "33. Телеграм-Лайт",
+        "name": "34. Телеграм-Лайт",
         "type": "Writing",
         "subtype": "TelegramLT",
         "id": "tg",
@@ -537,12 +551,12 @@
         "descr": "",
         "token": "",
         "chatID": "",
-        "num": 33
+        "num": 34
     },
     {
         "global": 0,
         "needSave": 0,
-        "name": "34. Термостат Гистере́зис ",
+        "name": "35. Термостат Гистере́зис ",
         "type": "Writing",
         "subtype": "ThermostatGIST",
         "id": "Thermo",
@@ -556,12 +570,12 @@
         "term_rezerv_id": "",
         "gist": 0.3,
         "rele": "",
-        "num": 34
+        "num": 35
     },
     {
         "global": 0,
         "needSave": 0,
-        "name": "35. Термостат PID",
+        "name": "36. Термостат PID",
         "type": "Writing",
         "subtype": "ThermostatPID",
         "id": "Thermo",
@@ -578,12 +592,12 @@
         "KP": 5.0,
         "KI": 50,
         "KD": 1.0,
-        "num": 35
+        "num": 36
     },
     {
         "global": 0,
         "needSave": 0,
-        "name": "36. Термостат ЭТК",
+        "name": "37. Термостат ЭТК",
         "type": "Writing",
         "subtype": "ThermostatETK",
         "id": "Thermo",
@@ -594,12 +608,12 @@
         "round": 1,
         "iv_k": 1,
         "outside_id": "",
-        "num": 36
+        "num": 37
     },
     {
         "global": 0,
         "needSave": 0,
-        "name": "37. Термостат ЭТК2 ",
+        "name": "38. Термостат ЭТК2 ",
         "type": "Writing",
         "subtype": "ThermostatETK2",
         "id": "Thermo",
@@ -612,14 +626,14 @@
         "term_id": "",
         "iv_k": 1,
         "outside_id": "",
-        "num": 37
+        "num": 38
     },
     {
         "header": "screens"
     },
     {
         "global": 0,
-        "name": "38. LCD экран 2004",
+        "name": "39. LCD экран 2004",
         "type": "Reading",
         "subtype": "Lcd2004",
         "id": "Lcd",
@@ -632,10 +646,10 @@
         "id2show": "",
         "prefix": "",
         "postfix": "",
-        "num": 38
+        "num": 39
     },
     {
-        "name": "39. LCD экран 1602",
+        "name": "40. LCD экран 1602",
         "type": "Reading",
         "subtype": "Lcd2004",
         "id": "Lcd",
@@ -648,10 +662,10 @@
         "id2show": "",
         "prefix": "",
         "postfix": "",
-        "num": 39
+        "num": 40
     },
     {
-        "name": "40. OLED экран 128*64",
+        "name": "41. OLED экран 128*64",
         "type": "Reading",
         "subtype": "Oled128",
         "id": "oled",
@@ -664,6 +678,6 @@
         "coord": "0,10",
         "id2show": "id датчика",
         "shrift": "2",
-        "num": 40
+        "num": 41
     }
 ]
