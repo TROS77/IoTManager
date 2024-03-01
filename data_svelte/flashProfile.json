@@ -66,7 +66,7 @@
             },
             {
                 "path": "src/modules/sensors/A02Distance",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/Acs712",
@@ -90,7 +90,7 @@
             },
             {
                 "path": "src/modules/sensors/Ble",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/sensors/Ble_part1",
@@ -130,7 +130,7 @@
             },
             {
                 "path": "src/modules/sensors/ExternalMQTT",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/sensors/FreqMeter",
@@ -138,11 +138,11 @@
             },
             {
                 "path": "src/modules/sensors/GY21",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/sensors/Hdc1080",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/sensors/Hx710",
@@ -154,7 +154,7 @@
             },
             {
                 "path": "src/modules/sensors/Impulse",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/Ina219",
@@ -178,7 +178,7 @@
             },
             {
                 "path": "src/modules/sensors/Mhz19",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/sensors/MQgas",
@@ -186,7 +186,7 @@
             },
             {
                 "path": "src/modules/sensors/Ntc",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/sensors/Pzem004t",
@@ -194,7 +194,7 @@
             },
             {
                 "path": "src/modules/sensors/Pzem004t_v2",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/RCswitch",
@@ -210,7 +210,7 @@
             },
             {
                 "path": "src/modules/sensors/Scd40",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/sensors/Sds011",
@@ -218,7 +218,7 @@
             },
             {
                 "path": "src/modules/sensors/Sgp30",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/sensors/Sht20",
@@ -230,7 +230,7 @@
             },
             {
                 "path": "src/modules/sensors/Sonar",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/UART",
@@ -268,11 +268,11 @@
             },
             {
                 "path": "src/modules/exec/HttpGet",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/exec/IoTServo",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/exec/Mcp23008",
@@ -308,7 +308,7 @@
             },
             {
                 "path": "src/modules/exec/Pwm8266",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/exec/SDcard",
@@ -332,7 +332,7 @@
             },
             {
                 "path": "src/modules/exec/Thermostat",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/sensors/Ds2423",
@@ -342,15 +342,15 @@
         "screens": [
             {
                 "path": "src/modules/display/DwinI",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/display/GyverLAMP",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/display/Lcd2004",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/display/Nextion",
@@ -366,7 +366,7 @@
             },
             {
                 "path": "src/modules/display/Oled64",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/display/Smi2_m",
