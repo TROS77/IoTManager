@@ -157,7 +157,7 @@
       },
       {
         "path": "src/modules/virtual/owmWeather",
-        "active": true
+        "active": false
       },
       {
         "path": "src/modules/virtual/SaveConfig",
@@ -307,7 +307,7 @@
       },
       {
         "path": "src/modules/sensors/MQgas",
-        "active": true
+        "active": false
       },
       {
         "path": "src/modules/sensors/Ntc",
@@ -327,7 +327,7 @@
       },
       {
         "path": "src/modules/sensors/RTC",
-        "active": true
+        "active": false
       },
       {
         "path": "src/modules/sensors/S8",
@@ -393,7 +393,7 @@
       },
       {
         "path": "src/modules/exec/HttpGet",
-        "active": true
+        "active": false
       },
       {
         "path": "src/modules/exec/IoTServo",
@@ -413,7 +413,7 @@
       },
       {
         "path": "src/modules/exec/Multitouch",
-        "active": true
+        "active": false
       },
       {
         "path": "src/modules/exec/MySensors",

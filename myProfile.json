@@ -157,11 +157,11 @@
             },
             {
                 "path": "src/modules/virtual/owmWeather",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/virtual/SaveConfig",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/virtual/Timer",
@@ -195,7 +195,7 @@
             },
             {
                 "path": "src/modules/sensors/Acs712",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/Ads1115",
@@ -207,7 +207,7 @@
             },
             {
                 "path": "src/modules/sensors/AnalogAdc",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/BH_1750",
@@ -215,11 +215,11 @@
             },
             {
                 "path": "src/modules/sensors/Ble",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/Ble_part1",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/sensors/Ble_part2",
@@ -263,11 +263,11 @@
             },
             {
                 "path": "src/modules/sensors/GY21",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/Hdc1080",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/Hx710",
@@ -303,7 +303,7 @@
             },
             {
                 "path": "src/modules/sensors/Mhz19",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/MQgas",
@@ -331,11 +331,11 @@
             },
             {
                 "path": "src/modules/sensors/S8",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/Scd40",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/Sds011",
@@ -343,15 +343,15 @@
             },
             {
                 "path": "src/modules/sensors/Sgp30",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/Sht20",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/Sht30",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/Sonar",
@@ -359,10 +359,14 @@
             },
             {
                 "path": "src/modules/sensors/UART",
-                "active": true
+                "active": false
             }
         ],
         "executive_devices": [
+            {
+                "path": "src/modules/exec/AnalogBtn",
+                "active": true
+            },
             {
                 "path": "src/modules/exec/ButtonIn",
                 "active": true
@@ -467,7 +471,7 @@
             },
             {
                 "path": "src/modules/display/Lcd2004",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/display/Nextion",
@@ -479,7 +483,7 @@
             },
             {
                 "path": "src/modules/display/Oled128",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/display/Oled64",
