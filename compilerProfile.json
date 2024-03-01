@@ -1,30 +1,33 @@
 {
     "iotmSettings": {
-        "name": "IoTmanagerVer4",
-        "apssid": "IoTmanager",
-        "appass": "",
-        "routerssid": "iot",
-        "routerpass": "hostel3333",
-        "timezone": 2,
+        "name": "opentherm",
+        "apssid": "opentherm",
+        "appass": "4455667788",
+        "routerssid": "perenio",
+        "routerpass": "4455667788",
+        "timezone": 3,
         "ntp": "pool.ntp.org",
         "weblogin": "admin",
         "webpass": "admin",
         "mqttServer": "",
-        "mqttPort": 8021,
-        "mqttPrefix": "/risenew",
-        "mqttUser": "rise",
-        "mqttPass": "3hostel3",
-        "serverip": "http://iotmanager.org",
+        "mqttPort": 1883,
+        "mqttPrefix": "/demo",
+        "mqttUser": "",
+        "mqttPass": "",
+        "serverip": "http://live-control.com",
         "log": 0,
         "mqttin": 0,
         "pinSCL": 0,
         "pinSDA": 0,
+        "udps": false,
+        "HomeAssistant": "",
+        "OTfreq": "",
         "i2cFreq": 100000,
         "wg": "group1"
     },
     "projectProp": {
         "platformio": {
-            "default_envs": "esp8266_4mb",
+            "default_envs": "esp32_4mb3f",
             "comments_default_envs": "choose from: esp8266_4mb or esp32_4mb or esp32cam_4mb or esp32s2_4mb or esp32_4mb3f or esp32s3_16mb or esp32c3m_4mb or esp8266_1mb or esp8266_1mb_ota or esp8285_1mb or esp8285_1mb_ota",
             "envs": [
                 {
@@ -127,6 +130,16 @@
         }
     },
     "modules": {
+        "Виртуальные элементы": [
+            {
+                "path": "src/modules/virtual/SaveConfig",
+                "active": false
+            },
+            {
+                "path": "src/modules/virtual/VariableColor",
+                "active": true
+            }
+        ],
         "virtual_elments": [
             {
                 "path": "src/modules/virtual/Cron",
@@ -142,6 +155,10 @@
             },
             {
                 "path": "src/modules/virtual/LogingDaily",
+                "active": true
+            },
+            {
+                "path": "src/modules/virtual/LogingHourly",
                 "active": true
             },
             {
@@ -405,6 +422,10 @@
                 "active": false
             },
             {
+                "path": "src/modules/exec/OpenThermMonitor",
+                "active": true
+            },
+            {
                 "path": "src/modules/exec/Pcf8574",
                 "active": true
             },
@@ -443,6 +464,12 @@
             {
                 "path": "src/modules/sensors/Ds2423",
                 "active": false
+            }
+        ],
+        "Экраны": [
+            {
+                "path": "src/modules/display/GyverLAMP",
+                "active": true
             }
         ],
         "screens": [
