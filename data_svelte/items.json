@@ -285,7 +285,7 @@
     {
         "name": "18. bluetooth сканер",
         "type": "Reading",
-        "subtype": "BleScan",
+        "subtype": "BleScan_p1",
         "id": "BleScan",
         "widget": "na",
         "page": "",
@@ -299,7 +299,7 @@
     {
         "name": "19. bluetooth датчик",
         "type": "Reading",
-        "subtype": "BleSens",
+        "subtype": "BleSens_p1",
         "id": "BleSens",
         "widget": "anydataDef",
         "page": "Сенсоры",
@@ -858,47 +858,7 @@
     },
     {
         "global": 0,
-        "name": "54. Пассивный звуковой извещатель",
-        "type": "Writing",
-        "subtype": "Buzzer",
-        "id": "buzzer",
-        "widget": "toggle",
-        "page": "Кнопки",
-        "descr": "Buzzer",
-        "int": 4000,
-        "pin": 14,
-        "freq": 2000,
-        "duration": 1000,
-        "beatLevel": 4,
-        "tempo": 120,
-        "tempoCorrection": 1,
-        "pauseBetween": 0,
-        "transpose": 0,
-        "cycle": 0,
-        "indication": 1,
-        "val": 0,
-        "num": 54
-    },
-    {
-        "global": 0,
-        "name": "55. Энкодер",
-        "type": "Writing",
-        "subtype": "Encoder",
-        "id": "enc",
-        "widget": "inputDgt",
-        "page": "Энкодер",
-        "descr": "Громкость",
-        "needSave": 0,
-        "val": "0",
-        "round": 0,
-        "step": 1,
-        "stepOnPress": 5,
-        "pins": "4,5,2",
-        "num": 55
-    },
-    {
-        "global": 0,
-        "name": "56. HttpGet",
+        "name": "54. HttpGet",
         "type": "Writing",
         "subtype": "HttpGet",
         "id": "http",
@@ -907,39 +867,11 @@
         "descr": "",
         "token": "",
         "chatID": "",
-        "num": 56
+        "num": 54
     },
     {
         "global": 0,
-        "name": "57. Расширитель портов Mcp23017",
-        "type": "Reading",
-        "subtype": "Mcp23017",
-        "id": "Mcp",
-        "widget": "",
-        "page": "",
-        "descr": "",
-        "int": "0",
-        "addr": "0x20",
-        "index": 1,
-        "num": 57
-    },
-    {
-        "global": 0,
-        "name": "58. MP3 плеер",
-        "type": "Reading",
-        "subtype": "Mp3",
-        "id": "mp3",
-        "widget": "",
-        "page": "",
-        "descr": "",
-        "int": 1,
-        "pins": "14,12",
-        "volume": 20,
-        "num": 58
-    },
-    {
-        "global": 0,
-        "name": "59. Сенсорная кнопка",
+        "name": "55. Сенсорная кнопка",
         "type": "Writing",
         "subtype": "Multitouch",
         "id": "impulse",
@@ -953,11 +885,11 @@
         "pinMode": "INPUT",
         "debounceDelay": 50,
         "PWMDelay": 500,
-        "num": 59
+        "num": 55
     },
     {
         "global": 0,
-        "name": "60. OpenThermMonitor",
+        "name": "56. OpenThermMonitor",
         "type": "Reading",
         "subtype": "OpenThermMonitor",
         "id": "boiler",
@@ -980,43 +912,11 @@
         "telegram": 1,
         "int": 60,
         "license": "",
-        "num": 60
+        "num": 56
     },
     {
         "global": 0,
-        "name": "61. Расширитель портов Pcf8574",
-        "type": "Reading",
-        "subtype": "Pcf8574",
-        "id": "Pcf",
-        "widget": "",
-        "page": "",
-        "descr": "",
-        "int": "0",
-        "addr": "0x20",
-        "index": 1,
-        "num": 61
-    },
-    {
-        "global": 0,
-        "name": "62. PWM ESP32",
-        "type": "Writing",
-        "subtype": "Pwm32",
-        "id": "pwm",
-        "widget": "range",
-        "page": "Кнопки",
-        "descr": "PWM",
-        "int": 0,
-        "pin": 2,
-        "freq": 5000,
-        "ledChannel": 2,
-        "PWM_resolution": 10,
-        "val": 0,
-        "apin": -1,
-        "num": 62
-    },
-    {
-        "global": 0,
-        "name": "63. Телеграм-Лайт",
+        "name": "57. Телеграм-Лайт",
         "type": "Writing",
         "subtype": "TelegramLT",
         "id": "tg",
@@ -1025,12 +925,12 @@
         "descr": "",
         "token": "",
         "chatID": "",
-        "num": 63
+        "num": 57
     },
     {
         "global": 0,
         "needSave": 0,
-        "name": "64. Термостат Гистере́зис ",
+        "name": "58. Термостат Гистере́зис ",
         "type": "Writing",
         "subtype": "ThermostatGIST",
         "id": "Thermo",
@@ -1044,12 +944,12 @@
         "term_rezerv_id": "",
         "gist": 0.3,
         "rele": "",
-        "num": 64
+        "num": 58
     },
     {
         "global": 0,
         "needSave": 0,
-        "name": "65. Термостат PID",
+        "name": "59. Термостат PID",
         "type": "Writing",
         "subtype": "ThermostatPID",
         "id": "Thermo",
@@ -1066,12 +966,12 @@
         "KP": 5.0,
         "KI": 50,
         "KD": 1.0,
-        "num": 65
+        "num": 59
     },
     {
         "global": 0,
         "needSave": 0,
-        "name": "66. Термостат ЭТК",
+        "name": "60. Термостат ЭТК",
         "type": "Writing",
         "subtype": "ThermostatETK",
         "id": "Thermo",
@@ -1082,12 +982,12 @@
         "round": 1,
         "iv_k": 1,
         "outside_id": "",
-        "num": 66
+        "num": 60
     },
     {
         "global": 0,
         "needSave": 0,
-        "name": "67. Термостат ЭТК2 ",
+        "name": "61. Термостат ЭТК2 ",
         "type": "Writing",
         "subtype": "ThermostatETK2",
         "id": "Thermo",
@@ -1100,26 +1000,9 @@
         "term_id": "",
         "iv_k": 1,
         "outside_id": "",
-        "num": 67
+        "num": 61
     },
     {
         "header": "screens"
-    },
-    {
-        "global": 0,
-        "name": "68. Smi2_m",
-        "type": "Writing",
-        "subtype": "Smi2_m",
-        "id": "Smi",
-        "widget": "",
-        "page": "Дисплеи",
-        "descr": "",
-        "int": 2,
-        "pin": 4,
-        "id2show": "id датчика",
-        "baud": "9600",
-        "rx": "16",
-        "tx": "17",
-        "num": 68
     }
 ]
