@@ -68,29 +68,7 @@
     },
     {
         "global": 0,
-        "name": "5. Погода OWM",
-        "type": "Reading",
-        "subtype": "owmWeather",
-        "id": "owm",
-        "needSave": 0,
-        "widget": "nil",
-        "page": "Погода",
-        "descr": "Температура на улице",
-        "int": 30,
-        "API_key": "",
-        "city": "Moscow",
-        "lon": "37.54",
-        "lat": "57.74",
-        "lang": "ru",
-        "param": "",
-        "round": 1,
-        "val": "...",
-        "debug": 0,
-        "num": 5
-    },
-    {
-        "global": 0,
-        "name": "6. Таймер",
+        "name": "5. Таймер",
         "type": "Writing",
         "subtype": "Timer",
         "id": "timer",
@@ -102,11 +80,11 @@
         "ticker": 1,
         "repeat": 1,
         "needSave": 0,
-        "num": 6
+        "num": 5
     },
     {
         "global": 0,
-        "name": "7. Окно ввода числа (переменная)",
+        "name": "6. Окно ввода числа (переменная)",
         "type": "Reading",
         "subtype": "Variable",
         "id": "value",
@@ -120,11 +98,11 @@
         "plus": 0,
         "multiply": 1,
         "round": 0,
-        "num": 7
+        "num": 6
     },
     {
         "global": 0,
-        "name": "8. Окно ввода времени",
+        "name": "7. Окно ввода времени",
         "type": "Reading",
         "subtype": "Variable",
         "id": "time",
@@ -134,11 +112,11 @@
         "descr": "Введите время",
         "int": "0",
         "val": "02:00",
-        "num": 8
+        "num": 7
     },
     {
         "global": 0,
-        "name": "9. Окно ввода даты",
+        "name": "8. Окно ввода даты",
         "type": "Reading",
         "subtype": "Variable",
         "id": "time",
@@ -148,11 +126,11 @@
         "descr": "Введите дату",
         "int": "0",
         "val": "24.05.2022",
-        "num": 9
+        "num": 8
     },
     {
         "global": 0,
-        "name": "10. Окно ввода текста",
+        "name": "9. Окно ввода текста",
         "type": "Reading",
         "subtype": "Variable",
         "id": "txt",
@@ -162,11 +140,11 @@
         "descr": "Введите текст",
         "int": "0",
         "val": "текст",
-        "num": 10
+        "num": 9
     },
     {
         "global": 0,
-        "name": "11. Вывод значения",
+        "name": "10. Вывод значения",
         "type": "Reading",
         "subtype": "Variable",
         "id": "vout",
@@ -180,11 +158,11 @@
         "plus": 0,
         "multiply": 1,
         "round": 0,
-        "num": 11
+        "num": 10
     },
     {
         "global": 0,
-        "name": "12. Виртуальная кнопка",
+        "name": "11. Виртуальная кнопка",
         "type": "Reading",
         "subtype": "VButton",
         "id": "vbtn",
@@ -194,11 +172,11 @@
         "descr": "Кнопка",
         "int": "0",
         "val": "0",
-        "num": 12
+        "num": 11
     },
     {
         "global": 0,
-        "name": "13. Погода",
+        "name": "12. Погода",
         "type": "Reading",
         "subtype": "Weather",
         "id": "Weather",
@@ -211,13 +189,13 @@
         "param": "temp_C",
         "round": 0,
         "val": "...",
-        "num": 13
+        "num": 12
     },
     {
         "header": "sensors"
     },
     {
-        "name": "14. Acs712 Ток",
+        "name": "13. Acs712 Ток",
         "type": "Reading",
         "subtype": "Acs712",
         "id": "amp",
@@ -232,11 +210,11 @@
         "sens": 100,
         "adczero": 512,
         "btn-setZero": "nil",
-        "num": 14
+        "num": 13
     },
     {
         "global": 0,
-        "name": "15. AHTXX Температура",
+        "name": "14. AHTXX Температура",
         "type": "Reading",
         "subtype": "AhtXXt",
         "id": "Temp20",
@@ -247,11 +225,11 @@
         "addr": "0x38",
         "shtType": 1,
         "round": 1,
-        "num": 15
+        "num": 14
     },
     {
         "global": 0,
-        "name": "16. AHTXX Влажность",
+        "name": "15. AHTXX Влажность",
         "type": "Reading",
         "subtype": "AhtXXh",
         "id": "Hum20",
@@ -262,11 +240,11 @@
         "addr": "0x38",
         "shtType": 1,
         "round": 1,
-        "num": 16
+        "num": 15
     },
     {
         "global": 0,
-        "name": "17. Аналоговый сенсор",
+        "name": "16. Аналоговый сенсор",
         "type": "Reading",
         "subtype": "AnalogAdc",
         "id": "t",
@@ -280,12 +258,12 @@
         "pin": 0,
         "int": 15,
         "avgSteps": 1,
-        "num": 17
+        "num": 16
     },
     {
-        "name": "18. bluetooth сканер",
+        "name": "17. bluetooth сканер",
         "type": "Reading",
-        "subtype": "BleScan_p1",
+        "subtype": "BleScan",
         "id": "BleScan",
         "widget": "na",
         "page": "",
@@ -294,12 +272,12 @@
         "scanDuration": 10,
         "filter": "servicedatauuid",
         "debug": 1,
-        "num": 18
+        "num": 17
     },
     {
-        "name": "19. bluetooth датчик",
+        "name": "18. bluetooth датчик",
         "type": "Reading",
-        "subtype": "BleSens_p1",
+        "subtype": "BleSens",
         "id": "BleSens",
         "widget": "anydataDef",
         "page": "Сенсоры",
@@ -313,11 +291,11 @@
         "offline": 180,
         "MAC": "",
         "sensor": "",
-        "num": 19
+        "num": 18
     },
     {
         "global": 0,
-        "name": "20. BME280 Температура",
+        "name": "19. BME280 Температура",
         "type": "Reading",
         "subtype": "Bme280t",
         "id": "Tmp3",
@@ -327,11 +305,11 @@
         "int": 15,
         "addr": "0x77",
         "round": 1,
-        "num": 20
+        "num": 19
     },
     {
         "global": 0,
-        "name": "21. BME280 Давление",
+        "name": "20. BME280 Давление",
         "type": "Reading",
         "subtype": "Bme280p",
         "id": "Press3",
@@ -341,11 +319,11 @@
         "int": 15,
         "addr": "0x77",
         "round": 1,
-        "num": 21
+        "num": 20
     },
     {
         "global": 0,
-        "name": "22. BME280 Влажность",
+        "name": "21. BME280 Влажность",
         "type": "Reading",
         "subtype": "Bme280h",
         "id": "Hum3",
@@ -355,11 +333,11 @@
         "int": 15,
         "addr": "0x77",
         "round": 1,
-        "num": 22
+        "num": 21
     },
     {
         "global": 0,
-        "name": "23. BME280 Tочка росы",
+        "name": "22. BME280 Tочка росы",
         "type": "Reading",
         "subtype": "Bme280dp",
         "id": "Dew3",
@@ -369,11 +347,11 @@
         "int": 15,
         "addr": "0x77",
         "round": 1,
-        "num": 23
+        "num": 22
     },
     {
         "global": 0,
-        "name": "24. BMP280 Температура",
+        "name": "23. BMP280 Температура",
         "type": "Reading",
         "subtype": "Bmp280t",
         "id": "tmp3",
@@ -383,11 +361,11 @@
         "int": 15,
         "addr": "0x77",
         "round": 1,
-        "num": 24
+        "num": 23
     },
     {
         "global": 0,
-        "name": "25. BMP280 Давление",
+        "name": "24. BMP280 Давление",
         "type": "Reading",
         "subtype": "Bmp280p",
         "id": "Press3",
@@ -397,11 +375,11 @@
         "int": 15,
         "addr": "0x77",
         "round": 1,
-        "num": 25
+        "num": 24
     },
     {
         "global": 0,
-        "name": "26. DHT11 Температура",
+        "name": "25. DHT11 Температура",
         "type": "Reading",
         "subtype": "Dht1122t",
         "id": "tmp3",
@@ -411,11 +389,11 @@
         "int": 15,
         "pin": 0,
         "senstype": "dht11",
-        "num": 26
+        "num": 25
     },
     {
         "global": 0,
-        "name": "27. DHT11 Влажность",
+        "name": "26. DHT11 Влажность",
         "type": "Reading",
         "subtype": "Dht1122h",
         "id": "Hum3",
@@ -425,11 +403,11 @@
         "int": 15,
         "pin": 0,
         "senstype": "dht11",
-        "num": 27
+        "num": 26
     },
     {
         "global": 0,
-        "name": "28. DS18B20 Температура",
+        "name": "27. DS18B20 Температура",
         "type": "Reading",
         "subtype": "Ds18b20",
         "id": "dstmp",
@@ -441,11 +419,11 @@
         "index": 0,
         "addr": "",
         "round": 1,
-        "num": 28
+        "num": 27
     },
     {
         "global": 0,
-        "name": "29. MQTT парсер",
+        "name": "28. MQTT парсер",
         "type": "Reading",
         "subtype": "ExternalMQTT",
         "id": "MQTTin",
@@ -461,11 +439,11 @@
         "offline": 180,
         "int": 60,
         "debug": 0,
-        "num": 29
+        "num": 28
     },
     {
         "global": 0,
-        "name": "30. GY21 Температура",
+        "name": "29. GY21 Температура",
         "type": "Reading",
         "subtype": "GY21t",
         "id": "tmp4",
@@ -474,11 +452,11 @@
         "descr": "Температура",
         "round": 1,
         "int": 15,
-        "num": 30
+        "num": 29
     },
     {
         "global": 0,
-        "name": "31. GY21 Влажность",
+        "name": "30. GY21 Влажность",
         "type": "Reading",
         "subtype": "GY21h",
         "id": "Hum4",
@@ -487,11 +465,11 @@
         "descr": "Влажность",
         "round": 1,
         "int": 15,
-        "num": 31
+        "num": 30
     },
     {
         "global": 0,
-        "name": "32. HDC1080 Температура",
+        "name": "31. HDC1080 Температура",
         "type": "Reading",
         "subtype": "Hdc1080t",
         "id": "Temp1080",
@@ -501,11 +479,11 @@
         "int": 15,
         "addr": "0x40",
         "round": 1,
-        "num": 32
+        "num": 31
     },
     {
         "global": 0,
-        "name": "33. HDC1080 Влажность",
+        "name": "32. HDC1080 Влажность",
         "type": "Reading",
         "subtype": "Hdc1080h",
         "id": "Hum1080",
@@ -515,11 +493,11 @@
         "int": 15,
         "addr": "0x40",
         "round": 1,
-        "num": 33
+        "num": 32
     },
     {
         "global": 0,
-        "name": "34. MHZ-19 CO2 UART",
+        "name": "33. MHZ-19 CO2 UART",
         "type": "Reading",
         "subtype": "Mhz19uart",
         "id": "co2uart",
@@ -535,11 +513,11 @@
         "int": 15,
         "range": 5000,
         "ABC": 1,
-        "num": 34
+        "num": 33
     },
     {
         "global": 0,
-        "name": "35. MHZ-19 CO2 PWM",
+        "name": "34. MHZ-19 CO2 PWM",
         "type": "Reading",
         "subtype": "Mhz19pwm",
         "id": "co2pwm",
@@ -553,11 +531,11 @@
         "pin": 15,
         "maxRetriesNotAvailable": 10,
         "int": 300,
-        "num": 35
+        "num": 34
     },
     {
         "global": 0,
-        "name": "36. MHZ-19 Температура UART",
+        "name": "35. MHZ-19 Температура UART",
         "type": "Reading",
         "subtype": "Mhz19temp",
         "id": "Mhz19temp",
@@ -570,52 +548,11 @@
         "rxPin": 13,
         "txPin": 12,
         "int": 30,
-        "num": 36
+        "num": 35
     },
     {
         "global": 0,
-        "name": "37. MQ газовые анализаторы",
-        "type": "Reading",
-        "subtype": "MQgas",
-        "id": "MQ",
-        "widget": "anydataPpm",
-        "page": "Сенсоры",
-        "descr": "MQ-135",
-        "Series": 135,
-        "Gas": "CO2",
-        "Rl on board": 10,
-        "Ro in clean air": 0,
-        "Rl/Ro in clean air": 0,
-        "PPM in clean air": 397.13,
-        "aLimit": -0.42,
-        "bLimit": 1.92,
-        "Warm up time": 60,
-        "Sample interval": 20,
-        "Sample times": 10,
-        "Calibtation intensity": 5,
-        "autoCalibration": 1,
-        "autoCalib.Period": 24,
-        "TempHum correction": 1,
-        "temperature": 20,
-        "idTempSensor": "",
-        "humidity": 50,
-        "idHumSensor": "",
-        "k1": 0.00672096284322792,
-        "k2": -0.0159038179354688,
-        "b1": -0.741244323718154,
-        "b2": 1.77535862501753,
-        "Debug": 1,
-        "plus": 0,
-        "multiply": 1,
-        "round": 1,
-        "pin-Esp32": 34,
-        "operating voltage": 3.3,
-        "int": 15,
-        "num": 37
-    },
-    {
-        "global": 0,
-        "name": "38. Cенсор температуры NTC",
+        "name": "36. Cенсор температуры NTC",
         "type": "Reading",
         "subtype": "Ntc",
         "id": "Ntctmp",
@@ -632,32 +569,12 @@
         "T0": "25",
         "Vs": "3.3",
         "round": 1,
-        "num": 38
+        "num": 36
     },
     {
         "global": 0,
-        "name": "39. Часы реального времени",
-        "type": "Reading",
-        "subtype": "RTC",
-        "id": "rtc",
-        "widget": "anydataDef",
-        "page": "Таймеры",
-        "descr": "Время RTC",
-        "chipCode": 1,
-        "timeFormat": "d-m-Y H:i:s",
-        "RST": -1,
-        "CLK": -1,
-        "DAT": -1,
-        "ticker": 0,
-        "int": 5,
-        "btn-setUTime": "0",
-        "btn-setSysTime": "nil",
-        "num": 39
-    },
-    {
-        "global": 0,
-        "name": "40. (S8) Cенсор качества воздуха",
-        "num": 40,
+        "name": "37. (S8) Cенсор качества воздуха",
+        "num": 37,
         "type": "Reading",
         "subtype": "S8co",
         "id": "s8co",
@@ -671,7 +588,7 @@
     },
     {
         "global": 0,
-        "name": "41. SCD40 Углекислый газ",
+        "name": "38. SCD40 Углекислый газ",
         "type": "Reading",
         "subtype": "Scd40co2",
         "id": "Scd40co2",
@@ -683,11 +600,11 @@
         "lowPeriodic": 1,
         "autoCalibration": 1,
         "btn-Recalibration": 0,
-        "num": 41
+        "num": 38
     },
     {
         "global": 0,
-        "name": "42. SCD40 Влажность",
+        "name": "39. SCD40 Влажность",
         "type": "Reading",
         "subtype": "Scd40h",
         "id": "Scd40h",
@@ -696,11 +613,11 @@
         "descr": "SCD40 Влажность",
         "int": 15,
         "round": 1,
-        "num": 42
+        "num": 39
     },
     {
         "global": 0,
-        "name": "43. SCD40 Температура",
+        "name": "40. SCD40 Температура",
         "type": "Reading",
         "subtype": "Scd40t",
         "id": "Scd40t",
@@ -710,12 +627,12 @@
         "int": 15,
         "round": 1,
         "offset": 4,
-        "num": 43
+        "num": 40
     },
     {
         "global": 0,
-        "name": "44. SGP30 Cенсор качества воздуха",
-        "num": 44,
+        "name": "41. SGP30 Cенсор качества воздуха",
+        "num": 41,
         "type": "Reading",
         "subtype": "Sgp30t",
         "id": "sgp30t",
@@ -727,8 +644,8 @@
     },
     {
         "global": 0,
-        "name": "45. SGP30 Cенсор газа",
-        "num": 45,
+        "name": "42. SGP30 Cенсор газа",
+        "num": 42,
         "type": "Reading",
         "subtype": "Sgp30e",
         "id": "sgp30e",
@@ -740,7 +657,7 @@
     },
     {
         "global": 0,
-        "name": "46. Sht20 Температура",
+        "name": "43. Sht20 Температура",
         "type": "Reading",
         "subtype": "Sht20t",
         "id": "tmp2",
@@ -749,11 +666,11 @@
         "descr": "Температура",
         "int": 15,
         "round": 1,
-        "num": 46
+        "num": 43
     },
     {
         "global": 0,
-        "name": "47. Sht20 Влажность",
+        "name": "44. Sht20 Влажность",
         "type": "Reading",
         "subtype": "Sht20h",
         "id": "Hum2",
@@ -762,11 +679,11 @@
         "descr": "Влажность",
         "int": 15,
         "round": 1,
-        "num": 47
+        "num": 44
     },
     {
         "global": 0,
-        "name": "48. Sht30 Температура",
+        "name": "45. Sht30 Температура",
         "type": "Reading",
         "subtype": "Sht30t",
         "id": "tmp30",
@@ -775,11 +692,11 @@
         "descr": "SHT30 Температура",
         "int": 15,
         "round": 1,
-        "num": 48
+        "num": 45
     },
     {
         "global": 0,
-        "name": "49. Sht30 Влажность",
+        "name": "46. Sht30 Влажность",
         "type": "Reading",
         "subtype": "Sht30h",
         "id": "Hum30",
@@ -788,10 +705,10 @@
         "descr": "SHT30 Влажность",
         "int": 15,
         "round": 1,
-        "num": 49
+        "num": 46
     },
     {
-        "name": "50. UART",
+        "name": "47. UART",
         "type": "Reading",
         "subtype": "UART",
         "page": "",
@@ -803,28 +720,14 @@
         "line": 2,
         "speed": 9600,
         "eventFormat": 0,
-        "num": 50
+        "num": 47
     },
     {
         "header": "executive_devices"
     },
     {
         "global": 0,
-        "name": "51. Аналоговая кнопка",
-        "type": "Reading",
-        "subtype": "AnalogBtn",
-        "id": "abtn",
-        "widget": "toggle",
-        "page": "Кнопки",
-        "descr": "Освещение",
-        "pin": 34,
-        "aValue": -1,
-        "delta": 50,
-        "num": 51
-    },
-    {
-        "global": 0,
-        "name": "52. Кнопка подключенная к пину",
+        "name": "48. Кнопка подключенная к пину",
         "type": "Writing",
         "subtype": "ButtonIn",
         "id": "btn",
@@ -839,11 +742,11 @@
         "debounceDelay": 50,
         "fixState": 0,
         "inv": 0,
-        "num": 52
+        "num": 48
     },
     {
         "global": 0,
-        "name": "53. Управление пином",
+        "name": "49. Управление пином",
         "type": "Writing",
         "subtype": "ButtonOut",
         "needSave": 0,
@@ -854,42 +757,11 @@
         "int": 0,
         "inv": 0,
         "pin": 2,
-        "num": 53
+        "num": 49
     },
     {
         "global": 0,
-        "name": "54. HttpGet",
-        "type": "Writing",
-        "subtype": "HttpGet",
-        "id": "http",
-        "widget": "",
-        "page": "",
-        "descr": "",
-        "token": "",
-        "chatID": "",
-        "num": 54
-    },
-    {
-        "global": 0,
-        "name": "55. Сенсорная кнопка",
-        "type": "Writing",
-        "subtype": "Multitouch",
-        "id": "impulse",
-        "widget": "anydataDef",
-        "page": "Кнопки",
-        "descr": "Количество нажатий",
-        "needSave": 0,
-        "int": 300,
-        "inv": 1,
-        "pin": 16,
-        "pinMode": "INPUT",
-        "debounceDelay": 50,
-        "PWMDelay": 500,
-        "num": 55
-    },
-    {
-        "global": 0,
-        "name": "56. OpenThermMonitor",
+        "name": "50. OpenThermMonitor",
         "type": "Reading",
         "subtype": "OpenThermMonitor",
         "id": "boiler",
@@ -912,11 +784,11 @@
         "telegram": 1,
         "int": 60,
         "license": "",
-        "num": 56
+        "num": 50
     },
     {
         "global": 0,
-        "name": "57. Телеграм-Лайт",
+        "name": "51. Телеграм-Лайт",
         "type": "Writing",
         "subtype": "TelegramLT",
         "id": "tg",
@@ -925,12 +797,12 @@
         "descr": "",
         "token": "",
         "chatID": "",
-        "num": 57
+        "num": 51
     },
     {
         "global": 0,
         "needSave": 0,
-        "name": "58. Термостат Гистере́зис ",
+        "name": "52. Термостат Гистере́зис ",
         "type": "Writing",
         "subtype": "ThermostatGIST",
         "id": "Thermo",
@@ -944,12 +816,12 @@
         "term_rezerv_id": "",
         "gist": 0.3,
         "rele": "",
-        "num": 58
+        "num": 52
     },
     {
         "global": 0,
         "needSave": 0,
-        "name": "59. Термостат PID",
+        "name": "53. Термостат PID",
         "type": "Writing",
         "subtype": "ThermostatPID",
         "id": "Thermo",
@@ -966,12 +838,12 @@
         "KP": 5.0,
         "KI": 50,
         "KD": 1.0,
-        "num": 59
+        "num": 53
     },
     {
         "global": 0,
         "needSave": 0,
-        "name": "60. Термостат ЭТК",
+        "name": "54. Термостат ЭТК",
         "type": "Writing",
         "subtype": "ThermostatETK",
         "id": "Thermo",
@@ -982,12 +854,12 @@
         "round": 1,
         "iv_k": 1,
         "outside_id": "",
-        "num": 60
+        "num": 54
     },
     {
         "global": 0,
         "needSave": 0,
-        "name": "61. Термостат ЭТК2 ",
+        "name": "55. Термостат ЭТК2 ",
         "type": "Writing",
         "subtype": "ThermostatETK2",
         "id": "Thermo",
@@ -1000,7 +872,7 @@
         "term_id": "",
         "iv_k": 1,
         "outside_id": "",
-        "num": 61
+        "num": 55
     },
     {
         "header": "screens"

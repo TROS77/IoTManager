@@ -157,11 +157,11 @@
             },
             {
                 "path": "src/modules/virtual/owmWeather",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/virtual/SaveConfig",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/virtual/Timer",
@@ -215,11 +215,11 @@
             },
             {
                 "path": "src/modules/sensors/Ble",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/sensors/Ble_part1",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/Ble_part2",
@@ -307,7 +307,7 @@
             },
             {
                 "path": "src/modules/sensors/MQgas",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/Ntc",
@@ -327,7 +327,7 @@
             },
             {
                 "path": "src/modules/sensors/RTC",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/S8",
@@ -364,10 +364,6 @@
         ],
         "executive_devices": [
             {
-                "path": "src/modules/exec/AnalogBtn",
-                "active": true
-            },
-            {
                 "path": "src/modules/exec/ButtonIn",
                 "active": true
             },
@@ -393,7 +389,7 @@
             },
             {
                 "path": "src/modules/exec/HttpGet",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/exec/IoTServo",
@@ -413,7 +409,7 @@
             },
             {
                 "path": "src/modules/exec/Multitouch",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/exec/MySensors",
@@ -467,10 +463,6 @@
         "screens": [
             {
                 "path": "src/modules/display/DwinI",
-                "active": false
-            },
-            {
-                "path": "src/modules/display/GyverLAMP",
                 "active": false
             },
             {
