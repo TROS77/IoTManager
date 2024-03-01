@@ -22,7 +22,6 @@ void* getAPI_ButtonIn(String subtype, String params);
 void* getAPI_ButtonOut(String subtype, String params);
 void* getAPI_OpenThermMonitor(String subtype, String params);
 void* getAPI_TelegramLT(String subtype, String params);
-void* getAPI_Thermostat(String subtype, String params);
 void* getAPI_Lcd2004(String subtype, String params);
 void* getAPI_Oled128(String subtype, String params);
 
@@ -50,7 +49,6 @@ if ((tmpAPI = getAPI_ButtonIn(subtype, params)) != nullptr) return tmpAPI;
 if ((tmpAPI = getAPI_ButtonOut(subtype, params)) != nullptr) return tmpAPI;
 if ((tmpAPI = getAPI_OpenThermMonitor(subtype, params)) != nullptr) return tmpAPI;
 if ((tmpAPI = getAPI_TelegramLT(subtype, params)) != nullptr) return tmpAPI;
-if ((tmpAPI = getAPI_Thermostat(subtype, params)) != nullptr) return tmpAPI;
 if ((tmpAPI = getAPI_Lcd2004(subtype, params)) != nullptr) return tmpAPI;
 if ((tmpAPI = getAPI_Oled128(subtype, params)) != nullptr) return tmpAPI;
 return nullptr;

@@ -554,86 +554,11 @@
         "num": 34
     },
     {
-        "global": 0,
-        "needSave": 0,
-        "name": "35. Термостат Гистере́зис ",
-        "type": "Writing",
-        "subtype": "ThermostatGIST",
-        "id": "Thermo",
-        "widget": "anydataDef",
-        "page": "Климат",
-        "descr": "термостат",
-        "int": 60,
-        "round": 1,
-        "set_id": "",
-        "term_id": "",
-        "term_rezerv_id": "",
-        "gist": 0.3,
-        "rele": "",
-        "num": 35
-    },
-    {
-        "global": 0,
-        "needSave": 0,
-        "name": "36. Термостат PID",
-        "type": "Writing",
-        "subtype": "ThermostatPID",
-        "id": "Thermo",
-        "widget": "anydataHum",
-        "page": "Климат",
-        "descr": "термостат",
-        "int": 60,
-        "round": 1,
-        "map": "1,100,1,100",
-        "set_id": "",
-        "term_id": "",
-        "term_rezerv_id": "",
-        "rele": "",
-        "KP": 5.0,
-        "KI": 50,
-        "KD": 1.0,
-        "num": 36
-    },
-    {
-        "global": 0,
-        "needSave": 0,
-        "name": "37. Термостат ЭТК",
-        "type": "Writing",
-        "subtype": "ThermostatETK",
-        "id": "Thermo",
-        "widget": "anydataTmp",
-        "page": "Климат",
-        "descr": "термостат",
-        "int": 60,
-        "round": 1,
-        "iv_k": 1,
-        "outside_id": "",
-        "num": 37
-    },
-    {
-        "global": 0,
-        "needSave": 0,
-        "name": "38. Термостат ЭТК2 ",
-        "type": "Writing",
-        "subtype": "ThermostatETK2",
-        "id": "Thermo",
-        "widget": "anydataTmp",
-        "page": "Климат",
-        "descr": "термостат",
-        "int": 60,
-        "round": 1,
-        "set_id": "",
-        "term_id": "",
-        "iv_k": 1,
-        "outside_id": "",
-        "num": 38
-    },
-    {
         "header": "screens"
     },
     {
         "global": 0,
-        "name": "39. LCD экран 2004",
+        "name": "35. LCD экран 2004",
         "type": "Reading",
         "subtype": "Lcd2004",
         "id": "Lcd",
@@ -646,10 +571,10 @@
         "id2show": "",
         "prefix": "",
         "postfix": "",
-        "num": 39
+        "num": 35
     },
     {
-        "name": "40. LCD экран 1602",
+        "name": "36. LCD экран 1602",
         "type": "Reading",
         "subtype": "Lcd2004",
         "id": "Lcd",
@@ -662,10 +587,10 @@
         "id2show": "",
         "prefix": "",
         "postfix": "",
-        "num": 40
+        "num": 36
     },
     {
-        "name": "41. OLED экран 128*64",
+        "name": "37. OLED экран 128*64",
         "type": "Reading",
         "subtype": "Oled128",
         "id": "oled",
@@ -678,6 +603,6 @@
         "coord": "0,10",
         "id2show": "id датчика",
         "shrift": "2",
-        "num": 41
+        "num": 37
     }
 ]
