@@ -1,30 +1,33 @@
 {
     "iotmSettings": {
-        "name": "IoTmanagerVer4",
-        "apssid": "IoTmanager",
-        "appass": "",
+        "name": "opentherm",
+        "apssid": "opentherm",
+        "appass": "4455667788",
         "routerssid": "perenio",
         "routerpass": "4455667788",
         "timezone": 3,
         "ntp": "pool.ntp.org",
         "weblogin": "admin",
         "webpass": "admin",
-        "mqttServer": "live-control.com",
+        "mqttServer": "",
         "mqttPort": 1883,
         "mqttPrefix": "/demo",
         "mqttUser": "",
         "mqttPass": "",
-        "serverip": "",
+        "serverip": "http://live-control.com",
         "log": 0,
         "mqttin": 0,
         "pinSCL": 0,
         "pinSDA": 0,
+        "udps": false,
+        "HomeAssistant": "",
+        "OTfreq": "",
         "i2cFreq": 100000,
         "wg": "group1"
     },
     "projectProp": {
         "platformio": {
-            "default_envs": "esp8266_4mb",
+            "default_envs": "esp32s2_4mb",
             "comments_default_envs": "choose from: esp8266_4mb or esp32_4mb or esp32cam_4mb or esp32s2_4mb or esp32_4mb3f or esp32s3_16mb or esp32c3m_4mb or esp8266_1mb or esp8266_1mb_ota or esp8285_1mb or esp8285_1mb_ota",
             "envs": [
                 {
@@ -145,11 +148,19 @@
                 "active": true
             },
             {
-                "path": "src/modules/virtual/Math",
+                "path": "src/modules/virtual/LogingHourly",
                 "active": true
             },
             {
+                "path": "src/modules/virtual/Math",
+                "active": false
+            },
+            {
                 "path": "src/modules/virtual/owmWeather",
+                "active": false
+            },
+            {
+                "path": "src/modules/virtual/SaveConfig",
                 "active": true
             },
             {
@@ -158,6 +169,10 @@
             },
             {
                 "path": "src/modules/virtual/Variable",
+                "active": true
+            },
+            {
+                "path": "src/modules/virtual/VariableColor",
                 "active": true
             },
             {
@@ -176,7 +191,7 @@
             },
             {
                 "path": "src/modules/sensors/A02Distance",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/Acs712",
@@ -200,7 +215,7 @@
             },
             {
                 "path": "src/modules/sensors/Ble",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/sensors/Ble_part1",
@@ -240,7 +255,7 @@
             },
             {
                 "path": "src/modules/sensors/ExternalMQTT",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/sensors/FreqMeter",
@@ -248,11 +263,11 @@
             },
             {
                 "path": "src/modules/sensors/GY21",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/sensors/Hdc1080",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/sensors/Hx710",
@@ -264,7 +279,7 @@
             },
             {
                 "path": "src/modules/sensors/Impulse",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/Ina219",
@@ -288,15 +303,15 @@
             },
             {
                 "path": "src/modules/sensors/Mhz19",
-                "active": false
-            },
-            {
-                "path": "src/modules/sensors/MQgas",
                 "active": true
             },
             {
-                "path": "src/modules/sensors/Ntc",
+                "path": "src/modules/sensors/MQgas",
                 "active": false
+            },
+            {
+                "path": "src/modules/sensors/Ntc",
+                "active": true
             },
             {
                 "path": "src/modules/sensors/Pzem004t",
@@ -312,7 +327,7 @@
             },
             {
                 "path": "src/modules/sensors/RTC",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/S8",
@@ -320,7 +335,7 @@
             },
             {
                 "path": "src/modules/sensors/Scd40",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/sensors/Sds011",
@@ -328,7 +343,7 @@
             },
             {
                 "path": "src/modules/sensors/Sgp30",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/sensors/Sht20",
@@ -340,7 +355,7 @@
             },
             {
                 "path": "src/modules/sensors/Sonar",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/sensors/UART",
@@ -348,10 +363,6 @@
             }
         ],
         "executive_devices": [
-            {
-                "path": "src/modules/exec/AnalogBtn",
-                "active": true
-            },
             {
                 "path": "src/modules/exec/ButtonIn",
                 "active": true
@@ -362,11 +373,11 @@
             },
             {
                 "path": "src/modules/exec/Buzzer",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/exec/Enconder",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/exec/EspCam",
@@ -382,7 +393,7 @@
             },
             {
                 "path": "src/modules/exec/IoTServo",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/exec/Mcp23008",
@@ -390,31 +401,35 @@
             },
             {
                 "path": "src/modules/exec/Mcp23017",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/exec/Mp3",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/exec/Multitouch",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/exec/MySensors",
                 "active": false
             },
             {
-                "path": "src/modules/exec/Pcf8574",
+                "path": "src/modules/exec/OpenThermMonitor",
                 "active": true
+            },
+            {
+                "path": "src/modules/exec/Pcf8574",
+                "active": false
             },
             {
                 "path": "src/modules/exec/Pwm32",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/exec/Pwm8266",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/exec/SDcard",
@@ -438,7 +453,7 @@
             },
             {
                 "path": "src/modules/exec/Thermostat",
-                "active": false
+                "active": true
             },
             {
                 "path": "src/modules/sensors/Ds2423",
@@ -448,11 +463,11 @@
         "screens": [
             {
                 "path": "src/modules/display/DwinI",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/display/Lcd2004",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/display/Nextion",
@@ -468,11 +483,11 @@
             },
             {
                 "path": "src/modules/display/Oled64",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/display/Smi2_m",
-                "active": true
+                "active": false
             },
             {
                 "path": "src/modules/display/TM16XX",
